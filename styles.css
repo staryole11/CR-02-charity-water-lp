@@ -216,30 +216,45 @@ body {
 
 .gallery .padded {
   padding: 1rem;
-  background-color: var(--accent);
+  background-color: #77A8BB;
   border-radius: 12px;
-  border: 2px solid var(--highlight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #FFC907; /* yellow border */
 }
 
 .gallery img {
-  max-width: 100%;
-  border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #FFC907; /* Yellow border stays on image */
+}
+
+.gallery .padded img {
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
 }
 
 .gallery img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Ensure the middle image has consistent max-width and spacing */
 .gallery .padded:nth-child(2) img {
   max-width: 250px;
-  padding: 0 1rem;
+  padding: 0 1rem; /* horizontal padding for alignment */
+
 }
 
+/* Make first and last images wider for visual balance */
 .gallery .padded:first-child img,
 .gallery .padded:last-child img {
   max-width: 450px;
+  width: 100%;
 }
 
 /* Newsletter */
