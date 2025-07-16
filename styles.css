@@ -16,6 +16,20 @@ Fonts:
 - Proxima Nova
 - Avenir
 
+/* Enforce consistent font color on all elements */
+body, h1, h2, h3, h4, h5, h6, p, a, span, div, li, ul, ol, label, input, button {
+  color: #222 !important;
+}
+
+/* Explicitly set white text for hero area */
+.hero, .hero h1, .hero p {
+  color: #fff !important;
+}
+
+/* Explicitly set dark text for colored sections */
+.story, .call-to-action {
+  color: #222 !important;
+}
 */
 
 /* 
